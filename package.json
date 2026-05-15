@@ -1,11 +1,19 @@
 {
-  "name": "playwright-automation",
+  "name": "playwright",
   "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {},
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
   "type": "module",
-  "scripts": {
-    "start": "node script.js"
+  "devDependencies": {
+    "@playwright/test": "^1.56.1",
+    "@types/node": "^24.9.1"
   },
   "dependencies": {
-    "playwright": "^1.44.0"
+    "node-fetch": "^3.3.2",
+    "playwright": "^1.54.0"
   }
 }
