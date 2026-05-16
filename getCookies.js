@@ -9,7 +9,7 @@ import fetch from 'node-fetch';
   const OUTPUT_FILE = 'cookies.json';
   const WEBHOOK_URL = 'https://hook.us2.make.com/g7om9qxjwqwpja6aeybykn97r6uhgbhq'; // <--- poné aquí tu webhook
 
-  const browser = await firefox.launch({ headless: false });
+  const browser = await firefox.launch({ headless: true });
   const page = await browser.newPage();
 
   console.log('Abriendo página de login en claims.chilena.cl...');
