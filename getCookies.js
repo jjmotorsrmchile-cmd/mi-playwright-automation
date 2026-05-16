@@ -4,10 +4,11 @@ import fetch from 'node-fetch';
 
 (async () => {
   const LOGIN_PAGE = 'https://claims.chilena.cl/default.php';
-  const USERNAME = '77000465-9';
-  const PASSWORD = 'Diesel.488';
+  const USERNAME = process.env.USERNAME;
+const PASSWORD = process.env.PASSWORD;
+const WEBHOOK_URL = process.env.WEBHOOK_URL;
   const OUTPUT_FILE = 'cookies.json';
-  const WEBHOOK_URL = 'https://hook.us2.make.com/g7om9qxjwqwpja6aeybykn97r6uhgbhq'; // <--- poné aquí tu webhook
+  
 
   const browser = await firefox.launch({ headless: true });
   const page = await browser.newPage();
